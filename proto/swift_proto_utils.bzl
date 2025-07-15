@@ -241,7 +241,7 @@ def compile_swift_protos_for_target(
     generated_swift_srcs = []
     for swift_proto_compiler_target in swift_proto_compilers:
         swift_proto_compiler_info = swift_proto_compiler_target[SwiftProtoCompilerInfo]
-        compiler_deps.extend(swift_proto_compiler_info.compiler_deps)
+        # compiler_deps.extend(swift_proto_compiler_info.compiler_deps)
         generated_swift_srcs.extend(swift_proto_compiler_info.compile(
             label = ctx.label,
             actions = ctx.actions,
