@@ -112,9 +112,9 @@ def swift_rules_dependencies(include_bzlmod_ready_dependencies = True):
     _maybe(
         http_archive,
         name = "com_github_apple_swift_protobuf",
-        urls = ["https://github.com/apple/swift-protobuf/archive/1.20.2.tar.gz"],  # pinned to grpc-swift version
-        sha256 = "3fb50bd4d293337f202d917b6ada22f9548a0a0aed9d9a4d791e6fbd8a246ebb",
-        strip_prefix = "swift-protobuf-1.20.2/",
+        urls = ["https://github.com/apple/swift-protobuf/archive/1.29.0.tar.gz"],  # pinned to grpc-swift version
+        # sha256 = "3fb50bd4d293337f202d917b6ada22f9548a0a0aed9d9a4d791e6fbd8a246ebb",
+        strip_prefix = "swift-protobuf-1.29.0",
         build_file = Label(
             "//third_party:com_github_apple_swift_protobuf/BUILD.overlay",
         ),
